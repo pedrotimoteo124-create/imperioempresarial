@@ -1188,7 +1188,7 @@ export default function App() {
       <Footer setPage={setPage} />
       <ChatWidget />
       {/* WhatsApp */}
-      <a href="https://wa.me/5511999990000" target="_blank" rel="noopener noreferrer"
+      <a href="https://wa.me/5512988533884" target="_blank" rel="noopener noreferrer"
         style={{ position: "fixed", bottom: 92, right: 24, zIndex: 899, width: 52, height: 52, borderRadius: "50%", background: "#25D366", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 26, boxShadow: "0 4px 20px rgba(37,211,102,.4)", transition: "transform .2s", textDecoration: "none" }}
         onMouseEnter={e => e.currentTarget.style.transform = "scale(1.1)"}
         onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}>
@@ -1197,4 +1197,3 @@ export default function App() {
     </div>
   );
 }
-
