@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin — Império Estratégico</title>
+    <!-- Prevent indexing by search engines -->
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import React from 'react'
+      import ReactDOM from 'react-dom/client'
+      import Admin from './src/Admin.tsx'
+      ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(Admin))
+    </script>
+  </body>
+</html>
