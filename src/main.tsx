@@ -1,10 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import Admin from "./Admin";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+// Detecta se está na rota /admin
+const isAdmin = window.location.pathname.startsWith("/admin");
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  isAdmin ? <Admin /> : <App />
+);
